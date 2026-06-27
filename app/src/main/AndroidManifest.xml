@@ -1,0 +1,29 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32" />
+    <application android:theme="@style/Theme.HyynnStore" android:label="Hyynn Store" android:allowBackup="true" android:supportsRtl="true">
+        <activity android:name=".activity.AdminBannersActivity" />
+        <activity android:name=".activity.AdminProductReportsActivity" />
+        <activity android:name=".activity.AdminCategoriesActivity" />
+        <activity android:name=".activity.AdminNotificationsActivity" />
+        <activity android:name=".activity.NotificationActivity" />
+        <activity android:name=".activity.AdminReviewsActivity" />
+        <activity android:name=".activity.AdminUsersActivity" />
+        <activity android:name=".activity.AdminOrdersActivity" />
+        <activity android:name=".activity.AdminProductFormActivity" />
+        <activity android:name=".activity.AdminProductsActivity" />
+        <activity android:name=".activity.AdminDashboardActivity" />
+        <activity android:name=".activity.InfoActivity" />
+        <activity android:name=".activity.PaymentActivity" />
+        <activity android:name=".activity.CartActivity" />
+        <activity android:name=".activity.DetailActivity" />
+        <activity android:name=".activity.HomeActivity" />
+        <activity android:name=".activity.ForgotPasswordActivity" />
+        <activity android:name=".activity.RegisterActivity" />
+        <activity android:name=".activity.LoginActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

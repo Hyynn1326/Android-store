@@ -1,0 +1,2 @@
+package com.example.hyynnstore.model;
+public class CartItem { public int id,userId,productId,quantity; public double price; public String productName,image; public CartItem(int id,int userId,int productId,int quantity,double price,String productName,String image){this.id=id;this.userId=userId;this.productId=productId;this.quantity=quantity;this.price=price;this.productName=productName;this.image=image;} }

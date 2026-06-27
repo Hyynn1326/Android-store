@@ -1,0 +1,62 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.example.hyynnstore.app-mergeDebugResources-2:/values/values.xml",
+            "map": [
+                {
+                    "source": "D:\\Android\\HyynnStore\\app\\src\\main\\res\\values\\colors.xml",
+                    "from": {
+                        "startLines": "0,0",
+                        "startColumns": "53,11",
+                        "startOffsets": "53,11",
+                        "endColumns": "93,53",
+                        "endOffsets": "93,53"
+                    },
+                    "to": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,100",
+                        "endColumns": "44,46",
+                        "endOffsets": "95,142"
+                    }
+                },
+                {
+                    "source": "D:\\Android\\HyynnStore\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "0",
+                        "startColumns": "11",
+                        "startOffsets": "11",
+                        "endColumns": "55",
+                        "endOffsets": "55"
+                    },
+                    "to": {
+                        "startLines": "4",
+                        "startColumns": "4",
+                        "startOffsets": "147",
+                        "endColumns": "48",
+                        "endOffsets": "191"
+                    }
+                },
+                {
+                    "source": "D:\\Android\\HyynnStore\\app\\src\\main\\res\\values\\themes.xml",
+                    "from": {
+                        "startLines": "1",
+                        "startColumns": "4",
+                        "startOffsets": "16",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "349"
+                    },
+                    "to": {
+                        "startLines": "5",
+                        "startColumns": "4",
+                        "startOffsets": "196",
+                        "endLines": "10",
+                        "endColumns": "12",
+                        "endOffsets": "529"
+                    }
+                }
+            ]
+        }
+    ]
+}

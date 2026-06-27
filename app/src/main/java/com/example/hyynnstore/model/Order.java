@@ -1,0 +1,2 @@
+package com.example.hyynnstore.model;
+public class Order { public int id,userId; public String date,status,address,paymentMethod,userName; public double totalAmount; public Order(int id,int userId,String date,double totalAmount,String status,String address,String paymentMethod,String userName){this.id=id;this.userId=userId;this.date=date;this.totalAmount=totalAmount;this.status=status;this.address=address;this.paymentMethod=paymentMethod;this.userName=userName;} }

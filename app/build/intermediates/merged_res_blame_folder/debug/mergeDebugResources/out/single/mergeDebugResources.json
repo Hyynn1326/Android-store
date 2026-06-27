@@ -1,0 +1,70 @@
+[
+    {
+        "merged": "C:\\Users\\abc\\.gradle\\daemon\\9.3.0\\com.example.hyynnstore.app-debug-4:\\layout_item_home_category_note.xml.flat",
+        "source": "C:\\Users\\abc\\.gradle\\daemon\\9.3.0\\com.example.hyynnstore.app-main-6:\\layout\\item_home_category_note.xml"
+    },
+    {
+        "merged": "C:\\Users\\abc\\.gradle\\daemon\\9.3.0\\com.example.hyynnstore.app-debug-4:\\drawable_bg_popup_panel.xml.flat",
+        "source": "C:\\Users\\abc\\.gradle\\daemon\\9.3.0\\com.example.hyynnstore.app-main-6:\\drawable\\bg_popup_panel.xml"
+    },
+    {
+        "merged": "C:\\Users\\abc\\.gradle\\daemon\\9.3.0\\com.example.hyynnstore.app-debug-4:\\drawable_bg_button_gray.xml.flat",
+        "source": "C:\\Users\\abc\\.gradle\\daemon\\9.3.0\\com.example.hyynnstore.app-main-6:\\drawable\\bg_button_gray.xml"
+    },
+    {
+        "merged": "C:\\Users\\abc\\.gradle\\daemon\\9.3.0\\com.example.hyynnstore.app-debug-4:\\layout_item_home_product_note.xml.flat",
+        "source": "C:\\Users\\abc\\.gradle\\daemon\\9.3.0\\com.example.hyynnstore.app-main-6:\\layout\\item_home_product_note.xml"
+    },
+    {
+        "merged": "C:\\Users\\abc\\.gradle\\daemon\\9.3.0\\com.example.hyynnstore.app-debug-4:\\drawable_bg_home_category_active.xml.flat",
+        "source": "C:\\Users\\abc\\.gradle\\daemon\\9.3.0\\com.example.hyynnstore.app-main-6:\\drawable\\bg_home_category_active.xml"
+    },
+    {
+        "merged": "C:\\Users\\abc\\.gradle\\daemon\\9.3.0\\com.example.hyynnstore.app-debug-4:\\layout_activity_home.xml.flat",
+        "source": "C:\\Users\\abc\\.gradle\\daemon\\9.3.0\\com.example.hyynnstore.app-main-6:\\layout\\activity_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\abc\\.gradle\\daemon\\9.3.0\\com.example.hyynnstore.app-debug-4:\\drawable_bg_home_card.xml.flat",
+        "source": "C:\\Users\\abc\\.gradle\\daemon\\9.3.0\\com.example.hyynnstore.app-main-6:\\drawable\\bg_home_card.xml"
+    },
+    {
+        "merged": "C:\\Users\\abc\\.gradle\\daemon\\9.3.0\\com.example.hyynnstore.app-debug-4:\\drawable_bg_home_bottom.xml.flat",
+        "source": "C:\\Users\\abc\\.gradle\\daemon\\9.3.0\\com.example.hyynnstore.app-main-6:\\drawable\\bg_home_bottom.xml"
+    },
+    {
+        "merged": "C:\\Users\\abc\\.gradle\\daemon\\9.3.0\\com.example.hyynnstore.app-debug-4:\\drawable_bg_home_category.xml.flat",
+        "source": "C:\\Users\\abc\\.gradle\\daemon\\9.3.0\\com.example.hyynnstore.app-main-6:\\drawable\\bg_home_category.xml"
+    },
+    {
+        "merged": "C:\\Users\\abc\\.gradle\\daemon\\9.3.0\\com.example.hyynnstore.app-debug-4:\\drawable_bg_badge_blue.xml.flat",
+        "source": "C:\\Users\\abc\\.gradle\\daemon\\9.3.0\\com.example.hyynnstore.app-main-6:\\drawable\\bg_badge_blue.xml"
+    },
+    {
+        "merged": "C:\\Users\\abc\\.gradle\\daemon\\9.3.0\\com.example.hyynnstore.app-debug-4:\\drawable_bg_badge_hot.xml.flat",
+        "source": "C:\\Users\\abc\\.gradle\\daemon\\9.3.0\\com.example.hyynnstore.app-main-6:\\drawable\\bg_badge_hot.xml"
+    },
+    {
+        "merged": "C:\\Users\\abc\\.gradle\\daemon\\9.3.0\\com.example.hyynnstore.app-debug-4:\\drawable_bg_input_light.xml.flat",
+        "source": "C:\\Users\\abc\\.gradle\\daemon\\9.3.0\\com.example.hyynnstore.app-main-6:\\drawable\\bg_input_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\abc\\.gradle\\daemon\\9.3.0\\com.example.hyynnstore.app-debug-4:\\drawable_bg_home_image.xml.flat",
+        "source": "C:\\Users\\abc\\.gradle\\daemon\\9.3.0\\com.example.hyynnstore.app-main-6:\\drawable\\bg_home_image.xml"
+    },
+    {
+        "merged": "C:\\Users\\abc\\.gradle\\daemon\\9.3.0\\com.example.hyynnstore.app-debug-4:\\drawable_bg_button_yellow.xml.flat",
+        "source": "C:\\Users\\abc\\.gradle\\daemon\\9.3.0\\com.example.hyynnstore.app-main-6:\\drawable\\bg_button_yellow.xml"
+    },
+    {
+        "merged": "C:\\Users\\abc\\.gradle\\daemon\\9.3.0\\com.example.hyynnstore.app-debug-4:\\drawable_bg_home_search.xml.flat",
+        "source": "C:\\Users\\abc\\.gradle\\daemon\\9.3.0\\com.example.hyynnstore.app-main-6:\\drawable\\bg_home_search.xml"
+    },
+    {
+        "merged": "C:\\Users\\abc\\.gradle\\daemon\\9.3.0\\com.example.hyynnstore.app-debug-4:\\drawable_bg_button_dark.xml.flat",
+        "source": "C:\\Users\\abc\\.gradle\\daemon\\9.3.0\\com.example.hyynnstore.app-main-6:\\drawable\\bg_button_dark.xml"
+    },
+    {
+        "merged": "com.example.hyynnstore.app-debug-4:/layout_activity_home.xml.flat",
+        "source": "com.example.hyynnstore.app-main-6:/layout/activity_home.xml"
+    }
+]

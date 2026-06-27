@@ -1,0 +1,3 @@
+package com.example.hyynnstore.controller;
+import android.content.Context;import com.example.hyynnstore.database.DatabaseHelper;import com.example.hyynnstore.model.CartItem;import java.util.List;
+public class CartController { private final DatabaseHelper db; public CartController(Context c){db=new DatabaseHelper(c);} public void add(int u,int p,int q,double price){db.addToCart(u,p,q,price);} public List<CartItem> list(int u){return db.getCart(u);} public boolean qty(int id,int q){return db.updateCartQty(id,q);} public boolean del(int id){return db.deleteCart(id);} public double total(int u){return db.getCartTotal(u);} }

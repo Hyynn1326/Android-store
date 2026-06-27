@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="hyynn_dark">#111827</color>
+    <color name="hyynn_orange">#F97316</color>
+    <string name="app_name">Hyynn Store</string>
+    <style name="Theme.HyynnStore" parent="android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:colorAccent">#F97316</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:navigationBarColor">#111827</item>
+    </style>
+</resources>

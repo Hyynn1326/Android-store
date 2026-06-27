@@ -1,0 +1,3 @@
+package com.example.hyynnstore.controller;
+import android.content.Context;import com.example.hyynnstore.database.DatabaseHelper;import com.example.hyynnstore.model.User;
+public class AuthController { private final DatabaseHelper db; public AuthController(Context c){db=new DatabaseHelper(c);} public User login(String e,String p){return db.login(e,p);} public boolean emailExists(String e){return db.emailExists(e);} public long register(String n,String e,String ph,String p){return db.register(n,e,ph,p);} public boolean forgot(String e,String p){return db.updatePassword(e,p);} public User getUser(int id){return db.getUser(id);} public boolean updateUser(User u){return db.updateUser(u);} }

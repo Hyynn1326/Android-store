@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- File mẫu để bạn nhìn bố cục card sản phẩm trong Design. Bản HomeActivity hiện vẫn render card sản phẩm bằng Java để giữ logic cũ. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    android:background="@drawable/bg_home_card"
+    android:paddingBottom="10dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:background="@drawable/bg_home_image"
+        android:padding="8dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+        <TextView
+            android:layout_width="38dp"
+            android:layout_height="34dp"
+            android:layout_gravity="top|end"
+            android:gravity="center"
+            android:text="♡"
+            android:textSize="24sp" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="8dp"
+        android:paddingTop="9dp"
+        android:paddingEnd="8dp"
+        android:text="Tên sản phẩm"
+        android:textColor="#111827"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="8dp"
+        android:paddingTop="7dp"
+        android:paddingEnd="8dp"
+        android:text="12.990.000 đ"
+        android:textColor="#E11D48"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+</LinearLayout>

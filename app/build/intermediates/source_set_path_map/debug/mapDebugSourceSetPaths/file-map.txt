@@ -1,0 +1,7 @@
+com.example.hyynnstore.app-pngs-0 D:\Android\HyynnStore\app\build\generated\res\pngs\debug
+com.example.hyynnstore.app-resValues-1 D:\Android\HyynnStore\app\build\generated\res\resValues\debug
+com.example.hyynnstore.app-packageDebugResources-2 D:\Android\HyynnStore\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.example.hyynnstore.app-packageDebugResources-3 D:\Android\HyynnStore\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.example.hyynnstore.app-debug-4 D:\Android\HyynnStore\app\build\intermediates\merged_res\debug\mergeDebugResources
+com.example.hyynnstore.app-debug-5 D:\Android\HyynnStore\app\src\debug\res
+com.example.hyynnstore.app-main-6 D:\Android\HyynnStore\app\src\main\res

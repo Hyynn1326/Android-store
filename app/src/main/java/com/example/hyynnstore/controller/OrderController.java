@@ -1,0 +1,3 @@
+package com.example.hyynnstore.controller;
+import android.content.Context;import com.example.hyynnstore.database.DatabaseHelper;import com.example.hyynnstore.model.Order;import java.util.List;
+public class OrderController { private final DatabaseHelper db; public OrderController(Context c){db=new DatabaseHelper(c);} public long place(int u,String a,String p){return db.placeOrder(u,a,p);} public List<Order> list(int u,boolean all){return db.getOrders(u,all);} public boolean status(int id,String s){return db.updateOrderStatus(id,s);} public boolean done(int id){ return db.markOrderAdminDone(id); } public boolean isDone(int id){ return db.isOrderAdminDone(id); } }

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hyynnstore"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="23"
+        android:targetSdkVersion="35" />
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:extractNativeLibs="false"
+        android:label="Hyynn Store"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/Theme.HyynnStore" >
+        <activity android:name="com.example.hyynnstore.activity.AdminBannersActivity" />
+        <activity android:name="com.example.hyynnstore.activity.AdminProductReportsActivity" />
+        <activity android:name="com.example.hyynnstore.activity.AdminCategoriesActivity" />
+        <activity android:name="com.example.hyynnstore.activity.AdminNotificationsActivity" />
+        <activity android:name="com.example.hyynnstore.activity.NotificationActivity" />
+        <activity android:name="com.example.hyynnstore.activity.AdminReviewsActivity" />
+        <activity android:name="com.example.hyynnstore.activity.AdminUsersActivity" />
+        <activity android:name="com.example.hyynnstore.activity.AdminOrdersActivity" />
+        <activity android:name="com.example.hyynnstore.activity.AdminProductFormActivity" />
+        <activity android:name="com.example.hyynnstore.activity.AdminProductsActivity" />
+        <activity android:name="com.example.hyynnstore.activity.AdminDashboardActivity" />
+        <activity android:name="com.example.hyynnstore.activity.InfoActivity" />
+        <activity android:name="com.example.hyynnstore.activity.PaymentActivity" />
+        <activity android:name="com.example.hyynnstore.activity.CartActivity" />
+        <activity android:name="com.example.hyynnstore.activity.DetailActivity" />
+        <activity android:name="com.example.hyynnstore.activity.HomeActivity" />
+        <activity android:name="com.example.hyynnstore.activity.ForgotPasswordActivity" />
+        <activity android:name="com.example.hyynnstore.activity.RegisterActivity" />
+        <activity
+            android:name="com.example.hyynnstore.activity.LoginActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

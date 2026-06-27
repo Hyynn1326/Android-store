@@ -1,0 +1,129 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml:1:1-29:12
+INJECTED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml:1:1-29:12
+INJECTED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml:1:1-29:12
+INJECTED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml:1:1-29:12
+	package
+		INJECTED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml:1:11-69
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml:2:5-107
+	android:maxSdkVersion
+		ADDED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml:2:78-104
+	android:name
+		ADDED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml:2:22-77
+application
+ADDED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml:3:5-28:19
+INJECTED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml:3:5-28:19
+	android:extractNativeLibs
+		INJECTED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml
+	android:supportsRtl
+		ADDED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml:3:113-139
+	android:label
+		ADDED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml:3:58-85
+	android:allowBackup
+		ADDED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml:3:86-112
+	android:theme
+		ADDED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml:3:18-57
+activity#com.example.hyynnstore.activity.AdminBannersActivity
+ADDED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml:4:9-67
+	android:name
+		ADDED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml:4:19-64
+activity#com.example.hyynnstore.activity.AdminProductReportsActivity
+ADDED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml:5:9-74
+	android:name
+		ADDED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml:5:19-71
+activity#com.example.hyynnstore.activity.AdminCategoriesActivity
+ADDED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml:6:9-70
+	android:name
+		ADDED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml:6:19-67
+activity#com.example.hyynnstore.activity.AdminNotificationsActivity
+ADDED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml:7:9-73
+	android:name
+		ADDED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml:7:19-70
+activity#com.example.hyynnstore.activity.NotificationActivity
+ADDED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml:8:9-67
+	android:name
+		ADDED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml:8:19-64
+activity#com.example.hyynnstore.activity.AdminReviewsActivity
+ADDED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml:9:9-67
+	android:name
+		ADDED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml:9:19-64
+activity#com.example.hyynnstore.activity.AdminUsersActivity
+ADDED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml:10:9-65
+	android:name
+		ADDED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml:10:19-62
+activity#com.example.hyynnstore.activity.AdminOrdersActivity
+ADDED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml:11:9-66
+	android:name
+		ADDED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml:11:19-63
+activity#com.example.hyynnstore.activity.AdminProductFormActivity
+ADDED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml:12:9-71
+	android:name
+		ADDED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml:12:19-68
+activity#com.example.hyynnstore.activity.AdminProductsActivity
+ADDED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml:13:9-68
+	android:name
+		ADDED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml:13:19-65
+activity#com.example.hyynnstore.activity.AdminDashboardActivity
+ADDED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml:14:9-69
+	android:name
+		ADDED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml:14:19-66
+activity#com.example.hyynnstore.activity.InfoActivity
+ADDED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml:15:9-59
+	android:name
+		ADDED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml:15:19-56
+activity#com.example.hyynnstore.activity.PaymentActivity
+ADDED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml:16:9-62
+	android:name
+		ADDED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml:16:19-59
+activity#com.example.hyynnstore.activity.CartActivity
+ADDED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml:17:9-59
+	android:name
+		ADDED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml:17:19-56
+activity#com.example.hyynnstore.activity.DetailActivity
+ADDED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml:18:9-61
+	android:name
+		ADDED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml:18:19-58
+activity#com.example.hyynnstore.activity.HomeActivity
+ADDED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml:19:9-59
+	android:name
+		ADDED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml:19:19-56
+activity#com.example.hyynnstore.activity.ForgotPasswordActivity
+ADDED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml:20:9-69
+	android:name
+		ADDED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml:20:19-66
+activity#com.example.hyynnstore.activity.RegisterActivity
+ADDED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml:21:9-63
+	android:name
+		ADDED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml:21:19-60
+activity#com.example.hyynnstore.activity.LoginActivity
+ADDED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml:22:9-27:20
+	android:exported
+		ADDED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml:22:58-81
+	android:name
+		ADDED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml:22:19-57
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml:23:13-26:29
+action#android.intent.action.MAIN
+ADDED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml:24:17-69
+	android:name
+		ADDED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml:24:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml:25:17-77
+	android:name
+		ADDED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml:25:27-74
+uses-sdk
+INJECTED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml
+INJECTED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml
