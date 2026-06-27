@@ -64,7 +64,8 @@ public class AdminBannersActivity extends Activity {
             LinearLayout card = Ui.card(this);
             card.setPadding(Ui.dp(this, 12), Ui.dp(this, 12), Ui.dp(this, 12), Ui.dp(this, 12));
             ImageView img = new ImageView(this);
-            img.setScaleType(ImageView.ScaleType.CENTER_CROP);
+            img.setScaleType(ImageView.ScaleType.FIT_CENTER);
+            img.setAdjustViewBounds(true);
             loadImageInto(img, b.imageUri);
             img.setBackground(Ui.round(this, Color.parseColor("#E5E7EB"), 16, Ui.strokeColor(this), 1));
             card.addView(img, new LinearLayout.LayoutParams(-1, Ui.dp(this, 135)));
@@ -105,7 +106,8 @@ public class AdminBannersActivity extends Activity {
         content.addView(name, new LinearLayout.LayoutParams(-1, Ui.dp(this, 48)));
         Ui.gap(this, content, 8);
         ImageView preview = new ImageView(this);
-        preview.setScaleType(ImageView.ScaleType.CENTER_CROP);
+        preview.setScaleType(ImageView.ScaleType.FIT_CENTER);
+        preview.setAdjustViewBounds(true);
         preview.setBackground(Ui.round(this, Color.parseColor("#EEF2F7"), 16, Ui.strokeColor(this), 1));
         loadImageInto(preview, selectedImage);
         content.addView(preview, new LinearLayout.LayoutParams(-1, Ui.dp(this, 145)));
@@ -181,7 +183,8 @@ public class AdminBannersActivity extends Activity {
                 if (row == null || col == 2) { row = new LinearLayout(this); row.setOrientation(LinearLayout.HORIZONTAL); grid.addView(row); col = 0; }
                 String path = "asset://" + finalFolder + "/" + f;
                 ImageView img = new ImageView(this);
-                img.setScaleType(ImageView.ScaleType.CENTER_CROP);
+                img.setScaleType(ImageView.ScaleType.FIT_CENTER);
+            img.setAdjustViewBounds(true);
                 loadImageInto(img, path);
                 img.setBackground(Ui.round(this, Color.parseColor("#EEF2F7"), 14, Ui.strokeColor(this), 1));
                 LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(0, Ui.dp(this, 110), 1);

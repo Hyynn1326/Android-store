@@ -16,6 +16,7 @@ import android.graphics.drawable.GradientDrawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.Gravity;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -102,9 +103,8 @@ public class DetailActivity extends Activity {
         root.addView(createTopBar());
 
         LinearLayout productCard = card();
-        View productImage = createProductImage(product.image, 64);
-        productImage.setBackground(round(Ui.isDark(this) ? Color.parseColor("#111827") : Color.rgb(238, 242, 247), dp(18), Color.TRANSPARENT, 0));
-        productCard.addView(productImage, new LinearLayout.LayoutParams(-1, dp(150)));
+        View productImage = createProductImageGallery(product.image, 64);
+        productCard.addView(productImage, new LinearLayout.LayoutParams(-1, dp(190)));
 
         productCard.addView(title(product.name, 23));
         if (product.hasSale()) {
@@ -441,23 +441,92 @@ public class DetailActivity extends Activity {
         imageView.setImageResource(android.R.drawable.ic_menu_gallery);
     }
 
-    private View createProductImage(String value, int iconSize) {
-        value = firstImage(value);
+    private View createProductImageGallery(String value, int iconSize) {
+        ArrayList<String> images = splitImages(value);
+        if (images.isEmpty()) {
+            TextView emptyImage = label("▣", iconSize, DARK, false);
+            emptyImage.setGravity(Gravity.CENTER);
+            emptyImage.setBackground(round(Ui.isDark(this) ? Color.parseColor("#111827") : Color.rgb(238, 242, 247), dp(18), Color.TRANSPARENT, 0));
+            return emptyImage;
+        }
+
+        if (images.size() == 1 && !isRealImage(images.get(0))) {
+            TextView iconImage = label(images.get(0), iconSize, DARK, false);
+            iconImage.setGravity(Gravity.CENTER);
+            iconImage.setBackground(round(Ui.isDark(this) ? Color.parseColor("#111827") : Color.rgb(238, 242, 247), dp(18), Color.TRANSPARENT, 0));
+            return iconImage;
+        }
+
+        HorizontalScrollView scroll = new HorizontalScrollView(this);
+        scroll.setHorizontalScrollBarEnabled(false);
+        scroll.setFillViewport(true);
+
+        LinearLayout row = new LinearLayout(this);
+        row.setOrientation(LinearLayout.HORIZONTAL);
+        row.setPadding(0, 0, 0, 0);
+        scroll.addView(row);
+
+        final int itemWidth = galleryItemWidth();
+        attachOneImageSnap(scroll, itemWidth);
+
+        for (String img : images) {
+            View item = createSingleProductImage(img, iconSize);
+            item.setBackground(round(Ui.isDark(this) ? Color.parseColor("#111827") : Color.rgb(238, 242, 247), dp(18), Color.TRANSPARENT, 0));
+            LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(itemWidth, dp(185));
+            params.setMargins(0, 0, 0, 0);
+            row.addView(item, params);
+        }
+        return scroll;
+    }
+
+    private int galleryItemWidth() {
+        return Math.max(dp(240), getResources().getDisplayMetrics().widthPixels - dp(52));
+    }
+
+    private void attachOneImageSnap(HorizontalScrollView scroll, int itemWidth) {
+        scroll.setOnTouchListener((v, event) -> {
+            if (event.getAction() == MotionEvent.ACTION_UP || event.getAction() == MotionEvent.ACTION_CANCEL) {
+                scroll.postDelayed(() -> {
+                    int index = Math.round(scroll.getScrollX() / (float) itemWidth);
+                    scroll.smoothScrollTo(index * itemWidth, 0);
+                }, 120);
+            }
+            return false;
+        });
+    }
+
+    private View createSingleProductImage(String value, int iconSize) {
         if (value != null && value.startsWith("asset://")) {
             ImageView imageView = new ImageView(this);
-            imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
+            imageView.setScaleType(ImageView.ScaleType.FIT_CENTER);
+            imageView.setAdjustViewBounds(true);
             loadAssetInto(imageView, value);
             return imageView;
         }
         if (value != null && (value.startsWith("content://") || value.startsWith("file://"))) {
             ImageView imageView = new ImageView(this);
             imageView.setImageURI(Uri.parse(value));
-            imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
+            imageView.setScaleType(ImageView.ScaleType.FIT_CENTER);
+            imageView.setAdjustViewBounds(true);
             return imageView;
         }
         TextView image = label(value == null || value.trim().isEmpty() ? "▣" : value, iconSize, DARK, false);
         image.setGravity(Gravity.CENTER);
         return image;
+    }
+
+    private ArrayList<String> splitImages(String value) {
+        ArrayList<String> list = new ArrayList<>();
+        if (value == null || value.trim().isEmpty()) return list;
+        for (String part : value.split("\\|\\|")) {
+            String img = part == null ? "" : part.trim();
+            if (!img.isEmpty()) list.add(img);
+        }
+        return list;
+    }
+
+    private boolean isRealImage(String value) {
+        return value != null && (value.startsWith("asset://") || value.startsWith("content://") || value.startsWith("file://"));
     }
 
     private String firstImage(String value) {

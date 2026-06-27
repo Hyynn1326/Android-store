@@ -28,7 +28,9 @@
         <activity android:name="com.example.hyynnstore.activity.AdminReviewsActivity" />
         <activity android:name="com.example.hyynnstore.activity.AdminUsersActivity" />
         <activity android:name="com.example.hyynnstore.activity.AdminOrdersActivity" />
-        <activity android:name="com.example.hyynnstore.activity.AdminProductFormActivity" />
+        <activity
+            android:name="com.example.hyynnstore.activity.AdminProductFormActivity"
+            android:windowSoftInputMode="adjustResize" />
         <activity android:name="com.example.hyynnstore.activity.AdminProductsActivity" />
         <activity android:name="com.example.hyynnstore.activity.AdminDashboardActivity" />
         <activity android:name="com.example.hyynnstore.activity.InfoActivity" />

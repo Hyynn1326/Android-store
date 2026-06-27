@@ -64,7 +64,9 @@ ADDED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml:11:9-66
 	android:name
 		ADDED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml:11:19-63
 activity#com.example.hyynnstore.activity.AdminProductFormActivity
-ADDED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml:12:9-71
+ADDED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml:12:9-114
+	android:windowSoftInputMode
+		ADDED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml:12:69-111
 	android:name
 		ADDED from D:\Android\HyynnStore\app\src\main\AndroidManifest.xml:12:19-68
 activity#com.example.hyynnstore.activity.AdminProductsActivity

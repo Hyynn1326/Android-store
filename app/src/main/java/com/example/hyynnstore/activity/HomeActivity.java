@@ -19,6 +19,7 @@ import android.os.Handler;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.Gravity;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
 import android.widget.Button;
@@ -170,6 +171,7 @@ public class HomeActivity extends Activity {
         bannerRow.setOrientation(LinearLayout.HORIZONTAL);
         renderBanners();
         bannerScroll.addView(bannerRow);
+        attachBannerSnap();
         wrapper.addView(bannerScroll, new LinearLayout.LayoutParams(-1, dp(168)));
         startBannerAutoSlide();
         return wrapper;
@@ -193,7 +195,7 @@ public class HomeActivity extends Activity {
             bannerRow.addView(banner, params);
             return;
         }
-        int width = getResources().getDisplayMetrics().widthPixels - dp(24);
+        int width = bannerItemWidth();
         for (BannerItem item : banners) {
             LinearLayout banner = new LinearLayout(this);
             banner.setOrientation(LinearLayout.VERTICAL);
@@ -201,7 +203,8 @@ public class HomeActivity extends Activity {
             banner.setBackground(round(Ui.cardBg(this), dp(18), Ui.strokeColor(this), 1));
             if (item.imageUri != null && !item.imageUri.trim().isEmpty()) {
                 ImageView imageView = new ImageView(this);
-                imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
+                imageView.setScaleType(ImageView.ScaleType.FIT_CENTER);
+                imageView.setAdjustViewBounds(true);
                 loadImageInto(imageView, item.imageUri);
                 banner.addView(imageView, new LinearLayout.LayoutParams(-1, -1));
             } else {
@@ -210,9 +213,29 @@ public class HomeActivity extends Activity {
                 banner.addView(label("Chọn ảnh banner trong Admin để ảnh tự fit theo khung", 13, Ui.mutedColor(this), false));
             }
             LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(width, dp(158));
-            params.setMargins(0, 0, dp(10), 0);
+            params.setMargins(0, 0, 0, 0);
             bannerRow.addView(banner, params);
         }
+    }
+
+    private int bannerItemWidth() {
+        return Math.max(dp(260), getResources().getDisplayMetrics().widthPixels - dp(24));
+    }
+
+    private void attachBannerSnap() {
+        if (bannerScroll == null) return;
+        bannerScroll.setFillViewport(true);
+        bannerScroll.setOnTouchListener((v, event) -> {
+            if (event.getAction() == MotionEvent.ACTION_UP || event.getAction() == MotionEvent.ACTION_CANCEL) {
+                bannerScroll.postDelayed(() -> {
+                    int itemWidth = bannerItemWidth();
+                    int index = Math.round(bannerScroll.getScrollX() / (float) itemWidth);
+                    bannerIndex = Math.max(0, Math.min(index, bannerRow == null ? 0 : bannerRow.getChildCount() - 1));
+                    bannerScroll.smoothScrollTo(bannerIndex * itemWidth, 0);
+                }, 120);
+            }
+            return false;
+        });
     }
 
     private void startBannerAutoSlide() {
@@ -221,7 +244,7 @@ public class HomeActivity extends Activity {
             @Override public void run() {
                 if (bannerScroll != null && bannerRow != null && bannerRow.getChildCount() > 1) {
                     bannerIndex = (bannerIndex + 1) % bannerRow.getChildCount();
-                    int scrollX = bannerIndex * (getResources().getDisplayMetrics().widthPixels - dp(14));
+                    int scrollX = bannerIndex * bannerItemWidth();
                     bannerScroll.smoothScrollTo(scrollX, 0);
                     bannerHandler.postDelayed(this, 3000);
                 }
